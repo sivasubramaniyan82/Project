@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    .navbar{
+        width: 100%;
+        height:100vh;
+        position: relative;
+        background-color: lightblue;
+       
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        background-color: lightblue;
+        box-shadow: 4px 4px 10px;
+    }
+    nav ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+
+    }
+
+    nav li{
+        height: 60px;
+        display: flex;
+        align-items: center;
+
+    }
+    nav a {
+        height: 70%;
+        display:flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        padding: 10px 10px ;
+        text-align: center;
+        border-radius: 10px;
+        transition:0.2s;
+    } 
+    nav a:hover {
+        background-color: royalblue;
+        width:150px;
+        color: white;
+        justify-items: center;
+    }
+    .sidebar{
+        position: fixed;
+        top: 80px;
+        right: 0;
+        background-color:  rgba(255,255,255,0.468);
+        backdrop-filter: blur(10px);
+        width:250px;
+        height: 100vh;
+        box-shadow: -10px 0 10px rgba(255,255,255,0.2);
+        display: none;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    
+    .sidebar li{
+        width: 100%;
+        
+    }
+    .sidebar a{
+        width: 100%;
+
+    }
+    .logo img{
+        top:30%;
+        width: 100px;
+        height: 50px;
+    }
+    .container {
+        
+        display: inline-block;
+        cursor: pointer;
+        
+    }
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+     /* Rotate first bar */
+    .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+   }
+
+    /* Fade out the second bar */
+    .change .bar2 {opacity: 0;}
+
+    /* Rotate last bar */
+    .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+    }
+</style>
+<body>
+    <div class="navbar">
+        <div class="logo">
+           
+        </div>
+        <nav>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+            <ul>
+                <li><a href="#"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-search"></i> Search</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+                <li> <a href="#"><i class="fa fa-fw fa-user"></i> Login</a></li>            
+            </ul>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="sidebar">
+                <li><a href="#"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-search"></i> Search</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+                <li> <a href="#"><i class="fa fa-fw fa-user"></i> Login</a></li>
+            </ul>
+        </nav> 
+    </div>
+</body>
+<script>
+    
+    function myFunction(x) {
+        x.classList.toggle("change");
+        const side = document.querySelector('.sidebar');
+        if (side.style.display === 'flex') {
+            side.style.display = 'none';
+        } else {
+            side.style.display = 'flex';
+        }
+    }
+</script>
+</html>

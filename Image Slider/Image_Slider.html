@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+</head>
+<body>
+    <div class="container">
+        <img src="./Assets/WOLVERINE_1.jpg" alt="">
+        <img src="./Assets/WOLVERINE_2.jpg" alt="">
+        <img src="./Assets/WOLVERINE_3.jpg" alt="">
+        <img src="./Assets/WOLVERINE_4.jpg" alt="">
+        <img src="./Assets/WOLVERINE_5.jpg" alt="">
+        <img src="./Assets/WOLVERINE_6.jpg" alt="">
+    </div>
+    
+</body>
+<style>
+    body{
+        background-color: black;
+    }
+    .container{
+        margin-top: 100px;
+        margin-left: 200px;
+        width: 70%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+    .container img{
+        width: 10%;
+        height: 100%;
+        object-fit: cover; 
+        border-radius: 10px;
+        border: 2px solid rgba(255, 255, 255, 0.684);
+        transition: all ease-in-out 0.5s;
+    }
+    .container img:hover{
+        width: 50%;
+    }
+</style>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="./Assets/Style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Selection -->
+    <header class="header" >
+        <nav class="nav bd_grid">
+            <div>
+                <a href="#" class="nav_logo">Code-with-Siva</a>
+            </div>
+
+            <div class="nav_menu" id="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link active">About</a></li>
+                    <li class="nav_item"><a href="#skills" class="nav_link active">Skills</a></li>
+                    <li class="nav_item"><a href="#work" class="nav_link active">Project</a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link active">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav_toggle" id="nav_toggle">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <!-- Home Section -->
+        <section class="home bd_grid" id="home">
+            <div class="home_data" data-aos="fade-down">
+                <h1 class="home_title">
+                    Hi, <br/> I'm <span class="home_title-color">Siva Subramaniyan K</span> <br/> Web Developer
+                </h1> 
+                <a href="#Contact" class="button">Contact</a>
+            </div>
+            <div class="home_social">
+                <a href="https://www.linkedin.com/in/sivasubramaniyank?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="home_social-icon" data-aos="fade-down" data-aos-delay="200"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/sivasubramaniyan82" class="home_social-icon" data-aos="fade-down" data-aos-delay="250"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/jasper_7_jinx?igsh=MTY4N2djeWxxdHFqMA==" class="home_social-icon" data-aos="fade-down" data-aos-delay="300"><i class='bx bxl-instagram'></i></a>
+                <a href="https://x.com/Siva34262?t=H5HW-69jyICUgIkkJZxuPw&s=09" class="home_social-icon" data-aos="fade-down" data-aos-delay="350"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <div class="home_img" data-aos="fade-down" data-aos-delay="500">
+                <img src="./Assets/Home.svg" alt="">
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <h2 class="section-title" data-aos="fade-down" ><u>About</u></h2>
+            <div class="about_container bd_grid">
+                <div class="about_img" data-aos="fade-down" data-aos-delay="250">
+                    <img src="./Assets/About.svg" alt="">
+                </div>
+                <div>
+                    <h2 class="about_subtitle" data-aos="fade-down" data-aos-delay="350">I'm Siva Subramaniyan</h2>
+                    <p class="about_text" data-aos="fade-down" data-aos-delay="450">
+                        As a B.Tech graduate in Chemical Engineering from St. Joseph’s College of Engineering, with a keen interest in frontend development. I have gained hands-on experience in HTML, CSS, and JavaScript, progressing to an intermediate level. My goal is to secure a frontend developer role where I can enhance my skills and contribute to impactful projects.
+                    </p>    
+                </div>
+            </div>
+        </section>
+        <!-- Skill Section -->
+        <section class="skills section" id="skills">
+            <h2 class="section-title" data-aos="fade-down"><u>Skills</u></h2>
+            <div class="skills_container bd_grid">
+                <div>
+                    <h2 class="skills_subtitle"  data-aos="fade-down" data-aos-delay="250">Professional Skills</h2>
+                    <p class="skills_text"  data-aos="fade-down" data-aos-delay="350">
+                        Without  Sharpen your Weapon; standing on the Battle Field would not be enough to protect your weapon against all kinds of attack.
+                    </p>
+                    <!-- Skills HTML -->
+                    <div class="skills_data" data-aos="fade-right">
+                        <div class="skills_name">
+                            <i class='bx bxl-html5 skill_icon'></i>
+                            <span class="skill_name">Html5</span>
+                        </div>
+                        <div><span class="skill_percentage">95%</span></div>
+                        <div class="skill_bar skill_html"></div>
+                    </div>
+                    <!-- Skills CSS -->
+                    <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
+                        <div class="skills_name">
+                            <i class='bx bxl-css3 skill_icon'></i>
+                            <span class="skill_name">CSS3</span>
+                        </div>
+                        <div><span class="skill_percentage">85%</span></div>
+                        <div class="skill_bar skill_css"></div>
+                    </div>
+                    <!-- Skills JS -->
+                    <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
+                        <div class="skills_name">
+                            <i class='bx bxl-javascript skill_icon'></i>
+                            <span class="skill_name">JAVASCRIPT</span>
+                        </div>
+                        <div><span class="skill_percentage">70%</span></div>
+                        <div class="skill_bar skill_javascript"></div>
+                    </div>
+                    <!-- Skills React -->
+                    <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
+                        <div class="skills_name">
+                            <i class='bx bxl-react skill_icon'></i>
+                            <span class="skill_name">REACT</span>
+                        </div>
+                        <div><span class="skill_percentage">65%</span></div>
+                        <div class="skill_bar skill_react"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./Assets/Skill.svg" alt="work" class="skill_img" data-aos="fade-left" data-aos-delay="350">
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section class="work section" id="work">
+            <h2 class="section-title" data-aos="fade-down"><u>Project</u></h2>
+            <div class="work_container bd_grid"data-aos="fade-down" data-aos-delay="350">
+                <div class="work_img">
+                    <a href="https://github.com/sivasubramaniyan82"> <img src="./Assets/Img/Netflix Clone.png"  alt="Netflix Clone"></a>
+                </div>
+                <div class="work_img">
+                    <a href="https://github.com/sivasubramaniyan82"><img src="./Assets/Img/Analog Clock.png" alt="Analog Clock"></a>
+                </div>
+                <div class="work_img">
+                    <a href="https://github.com/sivasubramaniyan82"><img src="./Assets/Img/Calculator.png" alt="Calculator"></a>
+                </div>
+                <div class="work_img">
+                    <a href="https://www.figma.com/proto/Jo96bY9pbIjQc7vwidCcYF/E-Commerce-App?page-id=0%3A1&node-id=7-161&p=f&viewport=499%2C109%2C0.5&t=9tTISegYD8spHWK7-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=7%3A161"><img src="./Assets/Img/E-commerce Website.png" alt="Figma E-commerce App"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title" data-aos="fade-down"><u>Contact</u></h2>
+            <div class="contact_container bd_grid">
+                <form action="#" class="contact_form">
+                    <input type="text" placeholder="Name" class="control_input" data-aos="fade-right" data-aos-delay="250"/>
+                    <input type="mail" placeholder="Email" class="control_input" data-aos="fade-right" data-aos-delay="300"/>
+                    <textarea name="" id="" cols="0" rows="10" class="control_input" data-aos="fade-right" data-aos-delay="400"></textarea>
+                    <input type="button" value="Send" class="control_button button" data-aos="fade-right" data-aos-delay="450"/>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p class="footer_title" data-aos="fade-down">Siva Subramaniyan K</p>
+
+            <div class="footer_socials">
+                <a href="#" class="footer_icon" data-aos="fade-down" data-aos-delay="250"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" class="footer_icon" data-aos="fade-down" data-aos-delay="350"><i class='bx bxl-github'></i></a>
+                <a href="#" class="footer_icon" data-aos="fade-down" data-aos-delay="450"><i class='bx bxl-instagram'></i></a>
+                <a href="#" class="footer_icon" data-aos="fade-down" data-aos-delay="550"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <p data-aos="fade-down" data-aos-delay="650">&#169; 2025 copyright all right reserved</p>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./Script.js"></script>
+
+    <script>
+        AOS.init({duration: 1000, once: false,});
+    </script>
+</body>
+</html>

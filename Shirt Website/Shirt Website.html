@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirt Website</title>
+</head>
+<style>
+    .Bag{
+        background-color: lightblue;
+        width: 300px;
+        height: 500px;
+        border: 1px solid black;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 7px 7px 10px 0 black;
+        transition: all ease 0.s;
+        
+    }
+    .Bag:hover{
+        background-color: lawngreen;
+        transform: scale(1.1);
+    }
+
+    header{
+        background: linear-gradient(to left, royalblue, lightblue);
+        width: 100%;
+        color: white;
+        box-shadow: 0 0 10px 5px black;
+       
+    }
+    header h1{
+        text-align: center;
+        margin:0px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: 2px 2px 4px #000000;
+    }
+    body{
+        background-color: palevioletred;
+        margin: 0px;
+        padding: 0px;
+    }
+    footer{
+        background: linear-gradient(to left, royalblue, lightblue);
+        width: 100%;
+        height: 50px;
+        color: white;
+        position: fixed;
+        box-shadow: 0 0 10px 5px black;
+    }
+    footer h3{
+        text-align: center;
+        margin:0px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: 2px 2px 4px #000000;
+
+    }
+    .Bags{
+        background-color: lightblue;
+        width: 300px;
+        height: 500px;
+        border: 1px solid black;
+        border-radius: 30px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 500px;
+        left: 600px;
+        box-shadow: 7px 7px 10px 0 black;
+        transition: all ease 0.s;    
+    }
+    .Bags:hover{
+        background-color: lawngreen;
+        transform: scale(1.1);
+    }
+
+    img{
+        width: 250px;
+        height: 300px;
+        border-radius: 10px;
+
+    }
+
+    td{
+        padding-left: 25px;
+    }
+    button{
+        background-color: lightcoral;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 12px;
+        margin-top: 10px;
+        cursor: pointer;
+        
+    }
+
+    button:hover{
+        background-color: lightblue;
+    }
+</style>
+<body>
+    <header>
+        <h1>Your Fit Shirt</h1>
+    </header>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <td>
+                <div class="Bag">
+                    <h1>Shirt</h1>
+                    <img src="Shirt_1.png" alt="Shirt is not available">
+                    <h4>Price: Rs.750</h4>
+                    <button >Add to Cart</button>
+                    
+                </div>
+            </td>
+            <td>
+                <div class="Bag">
+                    <h1>Shirt</h1>
+                    <img src="Shirt_2.png" alt="Shirt is not available">
+                    <h4>Price: Rs.750</h4>
+                    <button>Add to Cart</button>
+                    
+                </div>
+            </td>
+            <td>
+                <div class="Bag">
+                    <h1>Shirt</h1>
+                    <img src="Shirt_3.png" alt="Shirt is not available">
+                    <h4>Price: Rs.750</h4>
+                    <button>Add to Cart</button>
+                    
+                </div>
+            </td>
+            <td>
+                <div class="Bag">
+                    <h1>Shirt</h1>
+                    <img src="Shirt_4.png" alt="Shirt is not available">
+                    <h4>Price: Rs.750</h4>
+                    <button>Add to Cart</button>
+                    
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="Bags">
+                    <h1>Shirt</h1>
+                    <img src="Shirt_5.png" alt="Shirt is not available">
+                    <h4>Price: Rs.650</h4>
+                    <button>Add to Cart</button>
+                    
+                </div>
+            </td>
+            <td>
+                <div class="Bags">
+                    <h1>Shirt</h1>
+                    <img src="Shirt_6.png" alt="Shirt is not available">
+                    <h4>Price: Rs.650</h4>
+                    <button>Add to Cart</button>
+                    
+                </div>
+            </td>
+
+        </tr>
+    </table>
+    <br>
+    <br>
+    <footer>
+        <br>
+        <h3>Thank You for visiting our website</h3>
+    </footer>
+</body>
+<script>
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            alert('Item added to cart');
+        });
+    });
+
+</script>
+</html>
